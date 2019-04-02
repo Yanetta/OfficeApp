@@ -21,8 +21,6 @@ public class SwaggerConfig implements WebMvcConfigurer {
 
     @Bean
     public Docket api() {
-        //List<SecurityScheme> schemeList = new ArrayList<>();
-        //schemeList.add(new BasicAuth("basicAuth"));
         return new Docket(DocumentationType.SWAGGER_2).select()
                 .apis(RequestHandlerSelectors.any()).paths(PathSelectors.any()).build();
     }
