@@ -50,7 +50,7 @@ public class OfficeServiceImpl implements OfficeService {
     public Set<Offices> getAllOffices() {
         LOG.debug("getAllOffices starts");
         Set<Offices> officesSet = new HashSet<>(officeDao.getAllOffices());
-        LOG.debug("updateOffice is successful");
+        LOG.debug("getAllOffices is successful");
         return officesSet;
     }
 }
