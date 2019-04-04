@@ -1,0 +1,147 @@
+{
+	"info": {
+		"_postman_id": "37c0c729-8aff-449c-b769-df28a6b5f951",
+		"name": "OfficeApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getAllOffices",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8090/office",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"office"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getOfficeById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8090/office/21",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"office",
+						"21"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "insertOffice",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"office\": 8888,\n    \"region\": \"Запад\",\n    \"city\": \"Кyv\",\n    \"target\": 725,\n    \"sales\": 835.915\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8090/office",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"office"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateOffice",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8090/office/8888?target=654",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"office",
+						"8888"
+					],
+					"query": [
+						{
+							"key": "target",
+							"value": "654"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteOffice",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8090/office/8888",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"office",
+						"8888"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
