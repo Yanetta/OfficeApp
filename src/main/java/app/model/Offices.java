@@ -39,6 +39,10 @@ public class Offices implements java.io.Serializable {
     public Offices() {
     }
 
+    public Offices(BigDecimal office) {
+        this.office = office;
+    }
+
     public Offices(BigDecimal office, String region, String city, Salesreps mgr, BigDecimal target, BigDecimal sales) {
         this.office = office;
         this.region = region;
